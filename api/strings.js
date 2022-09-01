@@ -13,7 +13,8 @@ const strings = {
 
   // API messages
   MESSAGE_SUCCESS: 'Data successfully returned!',
-  URL_NOT_VALID: 'Url is not valid youtube url!'
+  URL_NOT_VALID: 'Url is not valid youtube url!',
+  ID_NOT_VALID: 'You have entered not valid youtube video ID!'
 }
 
 module.exports = strings

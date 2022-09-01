@@ -10,7 +10,7 @@ app.use(cors())
 
 app.use(express.urlencoded({ extended: true }))
 
-app.listen('5050', () => console.log(`Server running at 127.0.0.1:5050`))
+app.listen('3000', () => console.log(`Server running at 127.0.0.1:3000`))
 
 app.get('/', apiRoot)
 // api routes middleware

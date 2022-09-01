@@ -2,7 +2,7 @@ const httpCodes = require('http-codes')
 
 const ResponseBody = require('./response')
 const strings = require('./strings')
-const getVideoInfo = require('./youtube')
+const { getVideoInfo, getVideoInfoById } = require('./youtube')
 
 const response = new ResponseBody()
 
@@ -28,8 +28,13 @@ const apiRoot = (req, res) => {
 }
 
 const getVidInfo = async (req, res) => {
-  const video_info = await getVideoInfo(req.params.url)
+  const video_info = await getVideoInfo(req.body.url)
   res.json(video_info)
 }
 
-module.exports = { apiRoot, getVidInfo }
+const getVideoById = async (req, res) => {
+  const video_info = await getVideoInfoById(req.params.videoId)
+  res.json(video_info)
+}
+
+module.exports = { apiRoot, getVidInfo, getVideoById }
