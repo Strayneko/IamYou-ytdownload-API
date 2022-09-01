@@ -1,0 +1,26 @@
+{
+  "name": "iamyou-ytdownloader",
+  "version": "1.0.0",
+  "description": "Simple youtube downloader and converter API",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://strayneko@github.com/Strayneko/Iamyou-ytdownload-API.git"
+  },
+  "author": "StrayNeko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Strayneko/Iamyou-ytdownload-API/issues"
+  },
+  "homepage": "https://github.com/Strayneko/Iamyou-ytdownload-API#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "http-codes": "^1.0.0",
+    "ytdl-core": "^4.10.0"
+  }
+}
