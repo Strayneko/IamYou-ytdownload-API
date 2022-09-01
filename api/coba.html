@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form
+      action="http://127.0.0.1:3000/api/video_info"
+      method="post"
+      id="formUrl"
+    >
+      <input type="text" name="url" id="url" />
+      <button type="button" id="coba">Test</button>
+    </form>
+  </body>
+
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <script>
+    $('#coba').on('click', () => {
+      const url = $('#url').val()
+      $.ajax({
+        url: 'http://127.0.0.1:3000/api/video_info',
+        type: 'POST',
+        data: {
+          url
+        },
+        success: (resp) => {
+          console.log(resp)
+        }
+      })
+    })
+  </script>
+</html>
