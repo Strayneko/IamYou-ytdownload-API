@@ -1,7 +1,7 @@
 const express = require('express')
 const cors = require('cors')
-const routes = require('./routes')
-const { iamyouRoot } = require('./controllers')
+const routes = require('./api/routes')
+const { apiRoot } = require('./api/controllers')
 
 const app = express()
 
