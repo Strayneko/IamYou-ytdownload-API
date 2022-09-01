@@ -2,13 +2,13 @@
   "name": "iamyou-ytdownloader",
   "version": "1.0.0",
   "description": "Simple youtube downloader and converter API",
-  "main": "server.js",
+  "main": "./api/server.js",
   "engines": {
     "node": "16.x"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node ./api/server.js"
   },
   "repository": {
     "type": "git",
